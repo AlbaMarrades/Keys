@@ -1,0 +1,41 @@
+.cover {
+    background-image: url(../../assets/404.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1500px;
+    height: 1000px;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+.text-position {
+    position: relative;
+    top: 235px;
+    right: -1000px;
+}
+
+.text {
+    padding-right: 10px;
+    margin: 100px 50px 50px 50px;
+    font-size: 50px;
+}
+
+.button {
+    margin-left: 150px;
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+    background-image: linear-gradient(to right, #2e8aa3 0%, #46c5ff 51%, #2e8aa3 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+}
+
+.button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,43 @@
+.loggedUser {
+    font-size: 12px;
+    margin-right: 10px;
+}
+.user {
+    font-weight: bold;
+    color: #2e8aa3;
+    text-decoration: underline;
+}
+
+.material-icons {
+    color: white;
+}
+
+button {
+    width: 150px;
+}
+
+.buttonLogout {
+    background-image: linear-gradient(to right, #ea6540 0%, #fbdc51 51%, #ea6540 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+}
+
+.buttonLogout:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.buttonLogin {
+    background-image: linear-gradient(to right, #2e8aa3 0%, #46c5ff 51%, #2e8aa3 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+}
+
+.buttonLogin:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}

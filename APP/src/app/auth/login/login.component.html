@@ -1,0 +1,19 @@
+<div class="card">
+    <div>
+        <div class="center"><img src="../../../assets/key_1564.png" class="logo"></div>
+
+        <app-username title="username" (change)="getUsername($event)" (keyup)="enterKeyPressed($event)">
+        </app-username>
+        <app-password title="password" (change)="getPassword($event)" (keyup)="enterKeyPressed($event)">
+        </app-password>
+
+        <button mat-raised-button class="buttonLogin" [disabled]="incomplete()" aria-label="submit" (click)="login()"
+            (keyup)="enterKeyPressed($event)">
+            {{ 'loginForm.login' | translate }}
+        </button>
+
+        <label class="label-error" *ngIf="error" aria-label="error">{{ 'error.incorrectLogin' | translate }}</label>
+       
+
+    </div>
+</div>

@@ -1,0 +1,11 @@
+{
+    "error": {
+        "assetExists": "Ya existe el activo",
+        "noId": "No existe ese ID Activo",
+        "incorrectLogin": "Usuario o contraseña incorrecta"
+    },
+    
+    "loginForm": {
+        "login": "Iniciar sesión"
+    }
+}

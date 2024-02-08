@@ -1,0 +1,33 @@
+version: "3.7"
+
+services:
+  api:
+    build: ./API
+    ports:
+      - 3001:3001
+    volumes:
+      - ./API:/API
+      - /API/node_modules
+    depends_on:
+      - mongo
+    container_name: API_keys
+
+  app:
+    build: ./APP
+    ports:
+      - 4200:4200
+    volumes:
+      - ./APP:/APP
+      - /APP/node_modules
+      - /APP/dist
+    depends_on:
+      - api
+    container_name: APP_keys
+
+  mongo:
+    image: mongo:5.0.6
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo-volume:/data/db
+    container_name: mongo_keys

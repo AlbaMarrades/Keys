@@ -1,0 +1,44 @@
+<div class="l-page g--color-blanco-1">
+  <h1>{{ 'list.title' | translate }}</h1>
+  <br>
+  <div class="l-flex">
+    <app-search class="g--margin-right-1" (onClick)="filterByTerm($event)"></app-search>
+    <app-filter class="g--margin-right-1" (onSelection)="filterByPortfolio($event)" searchTerm="portfolios"
+      placeholderTerm="{{ 'list.filter.portfolio' | translate }}"></app-filter>
+    <app-filter (onSelection)="filterByOwner($event)" searchTerm="owners" placeholderTerm="{{ 'list.filter.owner' | translate }}"></app-filter>
+  </div>
+
+  <table mat-table [dataSource]="collection" class="mat-elevation-z8 c-table">
+    <ng-container matColumnDef="UUID">
+      <th mat-header-cell *matHeaderCellDef aria-label="row"> {{ 'list.table.UUID' | translate }} </th>
+      <td mat-cell *matCellDef="let asset" class="rrew"> {{asset.UUID}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="portfolio">
+      <th mat-header-cell *matHeaderCellDef>{{ 'list.table.portfolio' | translate }} </th>
+      <td mat-cell *matCellDef="let asset"> {{asset.portfolio}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="owner">
+      <th mat-header-cell *matHeaderCellDef>{{ 'list.table.owner' | translate }}</th>
+      <td mat-cell *matCellDef="let asset"> {{asset.owner}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="origin">
+      <th mat-header-cell *matHeaderCellDef> {{ 'list.table.origin' | translate }} </th>
+      <td mat-cell *matCellDef="let asset"> {{asset.origin}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let asset" class="actions-cell">
+        <app-asset-actions UUID={{asset.UUID}} aria-label="edit" icon="mode_edit" path="edit-asset"
+          *RoleRequired="['admin']"></app-asset-actions>
+      </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>

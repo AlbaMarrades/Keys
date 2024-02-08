@@ -1,0 +1,35 @@
+.home{
+    background-image: url('../../assets/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: content-box; 
+}
+
+.content{
+   height: 100%;
+   display: grid;  
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(5, 1fr);
+}
+.middle{
+   grid-column-start: 1;
+   grid-column-end: 4;
+   grid-row-start: 2;
+   grid-row-end: 3;
+   display: grid;
+   text-align: center;
+}
+.title{
+   font-weight: bolder;
+   font-size: 40px;
+   line-height: 80px;
+}
+.text{
+   font-size: 24px; 
+}
+.btn{
+   margin-top: 20px;
+}
+

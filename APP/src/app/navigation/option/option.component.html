@@ -1,0 +1,10 @@
+<a  mat-list-item (click)="navigate()" 
+    [ngClass]="{'selected': isAtRoute()}"
+    *ngIf="visible"
+  >
+    <mat-icon
+    mat-list-icon>
+        {{icon}}
+    </mat-icon>
+    <span mat-line aria-label="text">{{option | translate}}</span>
+</a>

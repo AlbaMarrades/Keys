@@ -1,0 +1,11 @@
+{
+    "error": {
+        "assetExists": "Asset already exists",
+        "noId": "ID asset doesn't exists",
+        "incorrectLogin": "User or password incorrect"
+    },
+    
+    "loginForm": {
+        "login": "Login"
+    }
+}

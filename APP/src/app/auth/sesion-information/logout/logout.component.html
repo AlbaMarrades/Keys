@@ -1,0 +1,13 @@
+<button mat-raised-button 
+        (click)="toLogout()" 
+        class="buttonLogout" 
+        *ngIf="isLogged()" 
+        aria-label="logout"><span
+        class="material-icons">logout</span>
+</button>
+
+<button mat-raised-button 
+        class="buttonLogin" 
+        (click)="toLogin()" 
+        *ngIf="!isLogged()">{{ 'toolbar.login' | translate }}
+</button>

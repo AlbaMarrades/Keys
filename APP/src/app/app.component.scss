@@ -1,0 +1,38 @@
+mat-sidenav-container {
+    &.mat-sidenav-container {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+    }
+
+    &>mat-sidenav {
+      width: 15vw;
+      min-width: 200px !important;
+      
+    }
+
+    .content {
+      color:black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logout{
+      display:flex;
+      justify-content: space-between;
+    }
+  }
+.container{
+  display: flex;
+}
+mat-toolbar {
+ justify-content: space-between;
+}
+
+::ng-deep .mat-form-field-flex > .mat-form-field-infix {
+  padding: 0.4em 70px 0.4em 0.4em !important;
+}
+
+
+ 

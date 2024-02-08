@@ -1,0 +1,7 @@
+<div class="container">
+    <label class="loggedUser" *ngIf="isLogged()">
+        {{ 'toolbar.loggedAs' | translate }} <span class="user">{{username}}</span>
+    </label>
+    <app-time></app-time>
+    <app-languages></app-languages>
+</div>

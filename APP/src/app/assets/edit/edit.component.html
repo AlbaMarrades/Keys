@@ -1,0 +1,16 @@
+<div class="container card">
+
+  <app-field title="{{ 'assetForm.owner' | translate }}" aria-label="owner" (onKeyUp)="filterOwner($event)" value="{{id_owner}}" (keyup)="enterKeyPressed($event)"></app-field>
+  
+  <app-field title="{{ 'assetForm.origin' | translate }}" aria-label="origin" (onKeyUp)="filterOrigin($event)" value="{{id_origin}}" (keyup)="enterKeyPressed($event)"></app-field>
+
+  <app-field title="{{ 'assetForm.portfolio' | translate }}" aria-label="portfolio" (onKeyUp)="filterPortfolio($event)" value="{{id_portfolio}}" (keyup)="enterKeyPressed($event)"></app-field>
+
+  <div class="error-container">
+    <label aria-label="error" *ngIf="invalidAsset" class="error">{{'error.assetExists' | translate}}</label>
+  </div>
+
+  <button mat-raised-button class="buttonForm" aria-label="update" [disabled]="incomplete()"
+    (click)="sendUpdates()" (keyup)="enterKeyPressed($event)">{{ 'assetForm.update' | translate }}</button>
+
+</div>

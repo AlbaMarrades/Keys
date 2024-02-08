@@ -1,0 +1,5 @@
+<mat-form-field color="accent">
+    <mat-label>{{title}}</mat-label>
+    <input matInput (keyup)="emitEvent($event)"  
+    type="text" placeholder="{{ 'assetForm.placeholder' | translate }} {{title}}" value={{value}} [required]="require">
+</mat-form-field>

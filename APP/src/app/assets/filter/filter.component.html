@@ -1,0 +1,19 @@
+<mat-form-field color="accent" appearance="fill">
+    <mat-label>{{placeholderTerm}}</mat-label>
+    <mat-select aria-label=select{{searchTerm}} [(ngModel)]="value" (selectionChange)="selectedValue()">
+        <mat-option 
+        appHighlights
+        value="" >
+        --------------------------
+        </mat-option>
+        <mat-option 
+        appHighlights
+        *ngFor="let filteredRecord of filteredList" 
+        value="{{ filteredRecord }}" 
+        aria-label="option">
+            {{ filteredRecord }}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+

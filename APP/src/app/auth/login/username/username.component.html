@@ -1,0 +1,7 @@
+<div class="example-container">
+    <mat-form-field appearance="fill">
+        <mat-label>{{ 'loginForm.username' | translate }}</mat-label>
+        <input class="loginInput" [(ngModel)]="result" (blur)="broadcast()" matInput required aria-label="username">
+        <mat-icon class="icon" matSuffix>perm_identity</mat-icon>
+    </mat-form-field>
+</div>

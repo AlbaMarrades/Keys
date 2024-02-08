@@ -1,0 +1,61 @@
+{
+    "error": {
+        "assetExists" : "Asset already exists",
+        "noId" : "ID asset doesn't exists",
+        "incorrectLogin":"User or password incorrect"
+    },
+    "toolbar":{
+        "login":"Login",
+        "logout":"Logout",
+        "loggedAs":"Hello ",
+        "expires":"Your session expires at ",
+        "expired":"Your session has been expired "
+    },
+    "navbar":{
+        "home":"Home",
+        "addAsset":"Add asset",
+        "listAsset":"Assets list"
+    },
+    "loginForm":{
+        "username":"Username",
+        "password":"Password",
+        "login":"Login"
+    },
+    "list":{
+        "title":"Assets list",
+        "filter":{
+            "ID":"Search by ID",
+            "IDPlaceholder":"UUID/Origin ID",
+            "portfolio":"Select Portfolio",
+            "owner":"Select Owner",
+            "select": "Select",
+            "search": "Search"
+        },
+        "table":{
+            "UUID":"UUID",
+            "portfolio":"Portfolio ID",
+            "owner":"Owner ID",
+            "origin":"Origin ID"
+        }
+    },
+    "assetForm":{
+        "placeholder":"Type your ",
+        "owner":"Owner ID",
+        "origin":"Origin ID",
+        "portfolio":"Portfolio ID",
+        "actionButton":"Send",
+        "update":"Update"
+    },
+    "home":{
+        "welcome":"WELCOME TO KEYS",
+        "secondaryWelcome":"Keys system gestion",
+        "error":"404 Ups!",
+        "pageNotFound":"Page not found"
+    },
+    "snackBar":{
+        "snackMessage": "Your session has expired"
+    },
+    "notFound": {
+        "backHome": "Back to home"
+    }
+}

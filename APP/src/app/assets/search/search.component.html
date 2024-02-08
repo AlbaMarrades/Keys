@@ -1,0 +1,5 @@
+<mat-form-field color="accent" class="example-full-width" appearance="fill">
+    <mat-label>{{ 'list.filter.ID' | translate }}</mat-label>
+    <input type="text" aria-label="searchId" (keyup.enter)="search()" (focusout)="search()" [(ngModel)]="searchTerm" matInput placeholder="{{ 'list.filter.IDPlaceholder' | translate }}">
+    <mat-icon matSuffix (click)="search()">search</mat-icon>
+</mat-form-field> 

@@ -1,0 +1,61 @@
+{
+    "error": {
+        "assetExists" : "Ya existe el activo",
+        "noId" : "No existe ese ID Activo",
+        "incorrectLogin":"Usuario o contraseña incorrecta"
+    },
+    "toolbar":{
+        "login":"Iniciar sesión",
+        "logout":"Cerrar sesión",
+        "loggedAs":"Hola ",
+        "expires":"Su sesión expira a las ",
+        "expired":"Su sesión ha expirado "
+    },
+    "navbar":{
+        "home":"Inicio",
+        "addAsset":"Añadir Activo",
+        "listAsset":"Lista de Activos"
+    },
+    "loginForm":{
+        "username":"Usuario",
+        "password":"Contraseña",
+        "login":"Iniciar sesión"
+    },
+    "list":{
+        "title":"Listado de Activos",
+        "filter":{
+            "ID":"Busca por ID",
+            "IDPlaceholder":"ID Activo/ID Origen",
+            "portfolio":"Elige cartera",
+            "owner":"Elige propietario",
+            "select": "Elige",
+            "search": "Buscar"
+        },
+        "table":{
+            "UUID":"ID Activo",
+            "portfolio":"ID Cartera",
+            "owner":"ID Propietario",
+            "origin":"ID Origen"
+        }
+    },
+    "assetForm":{
+        "placeholder":"Escribe tu ",
+        "owner":"ID Propietario",
+        "origin":"ID Origen",
+        "portfolio":"Cartera",
+        "actionButton":"Enviar",
+        "update":"Actualizar"
+    },
+    "home":{
+        "welcome":"TE DAMOS LA BIENVENIDA A KEYS",
+        "secondaryWelcome":"Sistema de gestión de llaves",
+        "error":"404 Ups!",
+        "pageNotFound":"Página no encontrada"
+    },
+    "snackBar":{
+        "snackMessage": "Su sesión ha expirado"
+    },
+    "notFound": {
+        "backHome": "Volver a inicio"
+    }
+}

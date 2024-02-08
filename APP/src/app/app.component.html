@@ -1,0 +1,21 @@
+<mat-toolbar>
+  <div class="container">
+  <button *ngIf="isLogged" mat-icon-button (click)="sideNav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <app-denomination></app-denomination>
+</div>
+<app-sesion-information></app-sesion-information>
+</mat-toolbar>
+<app-progress-toolbar></app-progress-toolbar>
+
+<mat-sidenav-container>
+
+  <mat-sidenav (change)="logged" #sideNav position="start" mode="side" [opened]="isLogged" class="mat-elevation-z1">
+    <app-navigation></app-navigation>
+  </mat-sidenav>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-container>
